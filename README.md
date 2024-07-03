@@ -1,5 +1,7 @@
 # pash
 
+!!! DISCLAMER !!! - This is fork of the original pash (https://github.com/dylanaraps/pash)
+
 A simple password manager using GPG written in POSIX `sh`.
 
 - Written in safe and [shellcheck](https://www.shellcheck.net/) compliant POSIX `sh`.
