@@ -1,0 +1,31 @@
+.\" Man page for pash(1)
+.TH PASH "1" "July 2024" "pash" "User Commands"
+.SH NAME
+pash \- A simple password manager using GPG written in POSIX sh.
+.SH DESCRIPTION
+Simple password manager.
+.SH OPTIONS
+=> [a]dd  [name] \- Create a new password entry.
+.PP
+=> [c]opy [name] \- Copy entry to the clipboard.
+.PP
+=> [d]el  [name] \- Delete a password entry.
+.PP
+=> [l]ist        \- List all entries.
+.PP
+=> [s]how [name] \- Show password for an entry.
+.PP
+=> [t]ree        \- List all entries in a tree.
+.SH CUSTOMIZATION
+.PP
+Using a key pair:  export PASH_KEYID=XXXXXXXX
+.PP
+Password length:   export PASH_LENGTH=50
+.PP
+Password pattern:  export PASH_PATTERN=_A\-Z\-a\-z\-0\-9
+.PP
+Store location:    export PASH_DIR=~/.local/share/pash
+.PP
+Clipboard tool:    export PASH_CLIP='xclip \fB\-sel\fR c'
+.PP
+Clipboard timeout: export PASH_TIMEOUT=15 ('off' to disable)
